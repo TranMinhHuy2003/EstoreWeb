@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <nav class="navbar display_flex grid">
+                <ul class="list display_flex">
+                    <li class="list__item list__item--separate list__item--qr">
+                        Vào cửa hàng trên ứng dụng EStore
+                        <div class="qr-code">
+                            <img class="qr-code__img" src="./assets/img/d91264e165ed6facc6178994d5afae79.png" alt="">
+                            
+                            <div class="qr-code__download">
+                                <a href="" class="download__link">
+                                    <img src="./assets/img/appstore.png" alt="AppStore" class="download__img">
+                                </a>
+                                <a href="" class="download__link">
+                                    <img src="./assets/img/ggplay.png" alt="Google Play" class="download__img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <span class="no-pointer">Kết nối</span>
+                        <a href="https://www.facebook.com/minhhuy12122003/" class="navbar__social"><i class="navbar__icon fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/huyneeeeee_/" class="navbar__social"><i class="navbar__icon fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+                <ul class="list display_flex ">
+                    <li class="list__item list__item-notify">
+                        <a href="" class="list__item-link">
+                            <i class="navbar__icon fa-regular fa-bell margin-right-4"></i>
+                            Thông báo
+                        </a>
+
+                        <div class="navbar__notify">
+                            <header class="notify__header">
+                                <h3>Thông Báo Mới Nhận</h3>
+                            </header>
+
+                            <ul class="notify__list">
+                                <li class="notify__list-item">
+                                    <a href="" class="notify__link notify__link--NotYetViewed">
+                                        <img src="./assets/img/my pham.jpg" alt="" class="notify__link-img">
+                                        <div class="link__info">
+                                            <span class="info__name">Mỹ phẩm chính hãng </span>
+                                            <span class="info__desc">Mô tả mỹ phẩm chính hãng </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="notify__list-item">
+                                    <a href="" class="notify__link">
+                                        <img src="./assets/img/my pham.jpg" alt="" class="notify__link-img">
+                                        <div class="link__info">
+                                            <span class="info__name">Mỹ phẩm chính hãng </span>
+                                            <span class="info__desc">Mô tả mỹ phẩm chính hãng </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="notify__list-item">
+                                    <a href="" class="notify__link">
+                                        <img src="./assets/img/my pham.jpg" alt="" class="notify__link-img">
+                                        <div class="link__info">
+                                            <span class="info__name">Mỹ phẩm chính hãng</span>
+                                            <span class="info__desc">Mô tả mỹ phẩm chính hãng </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <footer class="notify__footer">
+                                <a href="" class="notify__footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <a href="" class="list__item-link">
+                            <i class="navbar__icon fa-regular fa-circle-question margin-right-4"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+
+                    <div class="validation">
+                        <li class="list__item list__item--bold list__item--separate js-Register">Đăng ký</li>
+                        <li class="list__item list__item--bold js-Login">Đăng nhập</li>
+                    </div>
+
+                    <!--User Info-->
+                    <div class="navbar__user close">
+                        <li class="list__item">
+                            <img src="./assets/img/user.png" alt="" class="user__img">
+                            <span class="user__name"></span>
+    
+                            <ul class="user__menu">
+                                <li class="user__item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+    
+                                <li class="user__item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+    
+                                <li class="user__item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+    
+                                <li class="user__item user__item--separate js-Logout">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="header-with-search">
+                <a href="" class="header__logo">
+                    <i class="header__logo-icon fa-solid fa-store"></i>
+                    <span class="header__logo-text">EStore</span>
+                </a>
+
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm" class="header__search-input">
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Laptop</a>
+                                </li>
+
+                                <li class="header__search-history-item">
+                                    <a href="">Áo sơ mi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search__selection">
+                        <span class="selection__text">Trong shop</span>
+                        <i class="fas fa-angle-down selection__icon"></i>
+
+                        <ul class="option">
+                            <li class="option__item">
+                                <span class="option__item-text">Trong shop</span>
+                                <i class="fas fa-check option__item-icon"></i>
+                            </li>
+                            <li class="option__item">
+                                <span class="option__item-text">Ngoài shop</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="fas fa-magnifying-glass header__search-btn-icon"></i>
+                    </button>
+                </div>
+
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <span class="cart-quantity close">7</span>
+
+                        <i class="fa-solid fa-cart-shopping header__cart-icon"></i>
+                        <!--Empty Cart: cart__list--empty-->
+                        <div class="cart__list">
+                            <div class="cart__list--empty">
+                                <img src="./assets/img/no_cart.png" alt="" class="cart__list--empty-img">
+                                <h3 class="cart__list--empty-msg">Chưa có sản phẩm</h3>
+                            </div>
+                            <div class="cart__list--no-empty close">
+
+                                <h3 class="card__heading">Sản phẩm đã thêm</h3>
+    
+                                <ul class="header__cart-product">
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/sg-11134201-22100-uqpp5h6xreiv8a_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Dép lông con sóc siêu cute</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">85.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Sóc nâu</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/sg-11134201-22120-fs7gi8d2rykv67_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Mô hình lắp ghép 12 con giáp 3D mini</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">4.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Con rồng</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/3f211173233eb67833231ec98699dce9_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Cây lau nhà thông minh có bình xịt phun sương</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">18.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Trắng</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/e8522da85e9bf088aaa7d3f069e95250_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Tai nghe không dây Bluetooth</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">101.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Đen</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/sg-11134201-22120-fs7gi8d2rykv67_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Mô hình lắp ghép 12 con giáp 3D mini</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">4.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Con rồng</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/3f211173233eb67833231ec98699dce9_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Cây lau nhà thông minh có bình xịt phun sương</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">18.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Trắng</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="product__item">
+                                        <img src="https://cf.shopee.vn/file/e8522da85e9bf088aaa7d3f069e95250_tn" alt="" class="header__cart-img">
+                                        <div class="product__item-info">
+                                            <div class="product__item-header">
+                                                <h4 class="product__item-name">Tai nghe không dây Bluetooth</h4>
+                                                <div class="product__item-price-wrap">
+                                                    <span class="product__item-price">101.000đ</span>
+                                                    <span class="product__item-multiply">x</span>
+                                                    <span class="product__item-quantity">1</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__item-body">
+                                                <span class="product__item-desc">Phân loại: Đen</span>
+                                                <span class="product__item-remove">Xóa</span>   
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                </ul>
+    
+                                <a href="#" class="btn btn--primary product__view">Xem giỏ hàng</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row padding-top-36">
+                    <div class="grid__col-2">
+                        <nav class="category">
+                            <h3 class="category__heading">DANH MỤC</h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Laptop</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Smartphone</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tablet</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đồng hồ</a>
+                                </li>
+
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sạc dự phòng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="grid__col-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__label-btn btn">Phổ biến</button>
+                            <button class="home-filter__label-btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__label-btn btn">Bán chạy</button>
+
+                            <div class="input-select">
+                                <span class="input-select__label">Giá</span>
+                                <i class="fas fa-angle-down input-select__icon"></i>
+
+                                <ul class="input-select__list">
+                                    <li class="input-select__item">
+                                        <a href="" class="input-select__link">Giá: Thấp đến Cao</a>
+                                    </li>
+
+                                    <li class="input-select__item">
+                                        <a href="" class="input-select__link">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-23020-rm8vwbd23cnv86_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">Apple MacBook Air 13" 2020 (M1/8GB/256GB)</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">28.990.000đ</span>
+                                            <span class="home-product-item-price-current">19.350.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 1,6k</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">33%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23020-4tey0bde4mnv21_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">Laptop Panasonic CF-SX1 màn 12 inch có Webcam - Core i5 Ram8G SSD120G</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">3.098.000đ</span>
+                                            <span class="home-product-item-price-current">2.888.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 48</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Nghệ An</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">7%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj3txndv240i4d_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã ELCN2 giảm 500K đơn 500K]  Máy Tính Xách Tay HUAWEI MateBook 14 (16+512G) | Intel® Core™ Thế Hệ Thứ 12</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">25.990.000đ</span>
+                                            <span class="home-product-item-price-current">22.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 93</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">TP. Hồ Chí Minh</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">12%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-23010-8pxrkhxnjhmve0_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">Laptop cũ nhiều lựa chọn Pentium đến i3 i5 i7 Giá tốt nhất</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old"></span>
+                                            <span class="home-product-item-price-current">1.000.000đ - 5.000.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 77</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <!-- <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label"></span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value"></span>
+                                            <span class="home-product-item-sale-label"></span>
+                                        </div> -->
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="grid__col-2-4">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item-img" style="background-image: url(https://down-vn.img.susercontent.com/file/73df37a011687e18302f91b2563465b6_tn);">
+                                        </div>
+
+                                        <h4 class="home-product-item-name">[Mã 77ELHA100K giảm 8% đơn 800K] [Mới 100%] (Combo kèm bút+ phím) Máy tính Microsoft Surface Pro 7 Plus i5/8GB/128GB</h4>
+                                        
+                                        <span class="home-product-item-price">
+                                            <span class="home-product-item-price-old">26.000.000đ</span>
+                                            <span class="home-product-item-price-current">18.990.000đ</span>
+                                        </span>
+
+                                        <span class="home-product-item-cmt">
+                                            <div class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-notyet fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-yet fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="home-product-item-rate">
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                                <i class="home-product-item-star--golden fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">Đã bán 14</span>
+                                        </span>
+
+                                        <div class="home-product-item-sell-place">Hà Nội</div>
+
+                                        <div class="home-product-item-favorite">    
+                                            <i class="home-product-item-favorite-icon fa-solid fa-check"></i>
+                                            <span class="home-product-item-favorite-label">Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item-sale">
+                                            <span class="home-product-item-sale-value">27%</span>
+                                            <span class="home-product-item-sale-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14 </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">EStore Mall</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Laptop</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Smartphone</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Tablet</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Đồng hồ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Sạc dự phòng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/d91264e165ed6facc6178994d5afae79.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-app">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/ggplay.png" alt="" class="footer__download-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/appstore.png" alt="" class="footer__download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__bottom">
+                <div class="grid">
+                    <div class="policy">
+                        <a href="" class="policy__link">
+                            <span class="policy__text">CHÍNH SÁCH BẢO MẬT</span>
+                        </a>
+                        <a href="" class="policy__link">
+                            <span class="policy__text">QUY CHẾ HOẠT ĐỘNG</span>
+                        </a>
+                        <a href="" class="policy__link">
+                            <span class="policy__text">CHÍNH SÁCH VẬN CHUYỂN</span>
+                        </a>
+                        <a href="" class="policy__link">
+                            <span class="policy__text">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</span>
+                        </a>
+                    </div>
+
+                    <div class="copyright">
+                        <span class="copyright__text">© 2023 - Bản quyền thuộc về EStore</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--Modal layout-->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <!--Register form-->
+            <form class="auth-form js-RegisterModal">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="header__heading">Đăng ký</h3>
+                        <span class="auth-form__switchbtn js-switchToLogin">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="username" type="text" class="auth-form__input" placeholder="Username">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="email" type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="password" type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="confirm-password" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="aside__text">
+                            Bằng việc đăng kí, bạn đã đồng ý với EStore về
+                            <a href="" class="aside__policy">Điều khoản dịch vụ</a> &
+                            <a href="" class="aside__policy">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal auth-form__control-back">TRỞ LẠI</button>
+                        <button type="submit" class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__social">
+                    <a href="" class="auth-form__social--fb btn  btn--size-s">
+                        <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__social-text">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__social--gg btn  btn--size-s">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-text">
+                            Kết nối với Google 
+                        </span>
+                    </a>
+                </div>
+            </form>
+
+            <!--Login form-->
+            <form class="auth-form js-LoginModal">
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="header__heading">Đăng nhập</h3>
+                        <span class="auth-form__switchbtn js-switchToRegister">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="loginUsername" type="text" class="auth-form__input" placeholder="Username">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="loginEmail" type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+
+                        <div class="auth-form__group">
+                            <small></small>
+                            <input id="loginPassword" type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help--forget">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal auth-form__control-back">TRỞ LẠI</button>
+                        <button type="submit" class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__social">
+                    <a href="" class="auth-form__social--fb btn  btn--size-s">
+                        <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__social-text">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+
+                    <a href="" class="auth-form__social--gg btn  btn--size-s">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-text">
+                            Kết nối với Google 
+                        </span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./register_login-modal.js"></script>
+    <script src="./register_login.js"></script>
+
+</body>
+</html>
